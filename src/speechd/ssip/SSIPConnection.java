@@ -354,7 +354,7 @@ public class SSIPConnection {
 	private String escapeData(String data) {
 		String escaped = data;
 		if (escaped.startsWith("."))
-			escaped = ".." + escaped;
+			escaped = "." + escaped;
 		escaped = escaped.replaceAll(CRLF + ".", CRLF + "..");
 		return escaped;
 	}
